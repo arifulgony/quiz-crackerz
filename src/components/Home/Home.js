@@ -2,6 +2,7 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import QuizeCart from '../QuizeCart/QuizeCart';
 import'./Home.css';
+import student from '../../img/student.png'
 
 
 const Home = () => {
@@ -13,7 +14,7 @@ const Home = () => {
                 <div className="row">
                     <div className="col-6">
                         <div>
-                      
+                      <img src={student} alt="" />
                         </div>
                         </div>
                     <div className="col-6 benar">
@@ -23,14 +24,13 @@ const Home = () => {
                        </div>
                     </div>
                 </div>
-            
             </div>
         </section>
         <section className='quiz-section pt-5'>
             <div className="container">
               <div className="row">
                  
-              {
+                {
                     quizes?.data.map(quize => <QuizeCart key={quize.id} quize={quize}></QuizeCart> )
                 }
               </div>
@@ -38,7 +38,7 @@ const Home = () => {
             </div>
 
         </section>
-        </>
+     </>
     );
 };
 

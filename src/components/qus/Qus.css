@@ -1,0 +1,27 @@
+.qus-body{
+    background-color: #111D5E;
+    padding: 50px;
+    /* //color: #FFF; */
+}
+.question-container{
+    background-color: #ffffff;
+    margin: 50px auto;
+    border: 1px solid burlywood;
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    padding: 30px;
+
+}
+
+
+.question-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 80px;
+    padding: 10px;
+    margin: 8px;
+    border: 1px solid  burlywood;
+}
