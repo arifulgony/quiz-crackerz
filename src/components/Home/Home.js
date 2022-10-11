@@ -1,10 +1,13 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import QuizeCart from '../QuizeCart/QuizeCart';
 import'./Home.css';
 
 
 const Home = () => {
-
+    const quizes = useLoaderData();
     return (
+        <>
         <section className="benar-section">
              <div className="container">
                 <div className="row">
@@ -21,7 +24,19 @@ const Home = () => {
             
             </div>
         </section>
-       
+        <section className='quiz-section pt-5'>
+            <div className="container">
+              <div className="row">
+                 
+              {
+                    quizes?.data.map(quize => <QuizeCart key={quize.id} quize={quize}></QuizeCart> )
+                }
+              </div>
+
+            </div>
+
+        </section>
+        </>
     );
 };
 
