@@ -17,3 +17,13 @@
         height: 2200px;
     }
 }
+.benar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+}
+.benar-details{
+
+}

@@ -1,13 +1,23 @@
 import React from 'react';
 import'./Header.css'
 
-
-
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { NavLink } from 'react-router-dom';
+
 
 const Header = () => {
+    
+    const navLinkStyle = ({ isActive }) =>{
+ 
+        return{
+            fontWeight: isActive ? 'bold' : 'normal',
+            textDecoration : isActive  ? 'none' :'underline'
+        }
+    
+    }
+
     return (
             <>
               <Navbar collapseOnSelect expand="lg" className='p-3 header-bg'>
@@ -18,10 +28,10 @@ const Header = () => {
                        <Nav className="me-auto">
                        </Nav>
                         <Nav className='fs-4 '>
-                            <Nav.Link href='/'>Home</Nav.Link>
-                            <Nav.Link href='/tropics'>Tropics</Nav.Link>
-                            <Nav.Link href='/statistcs'>Statistcs</Nav.Link>
-                            <Nav.Link href='/blog'>Blog</Nav.Link>
+                            <NavLink style={navLinkStyle} to='/'>Home</NavLink>
+                            <NavLink style={navLinkStyle} to ='/tropics'>Tropics</NavLink>
+                            <NavLink style={navLinkStyle} to ='/statistcs'>Statistcs</NavLink>
+                            <NavLink style={navLinkStyle} to ='/blog'>Blog</NavLink>
                         </Nav>
                     </Navbar.Collapse>
                  </Container>
