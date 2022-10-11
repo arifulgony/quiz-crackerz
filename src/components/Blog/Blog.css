@@ -1,0 +1,15 @@
+.blog-section{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+}
+
+.blog {
+    border: 2px solid burlywood;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    margin-right: 10px ,auto;
+    padding: 10px;
+    margin-bottom: 50px;
+}

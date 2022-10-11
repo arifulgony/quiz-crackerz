@@ -4,6 +4,7 @@ import Home from "./components/Home/Home";
 import Main from "./components/Layout/Main";
 import Statistcs from "./components/Statistcs/Statistcs";
 import Tropics from "./components/Tropics/Tropics";
+import ErroPage from "./components/ErroPage/ErroPage";
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     {
       path:'/',
       element:<Main></Main>,
+      errorElement:<ErroPage></ErroPage>,
       children:[
         {
           path:'/',
