@@ -18,14 +18,14 @@ const Header = () => {
 
     return (
             <>
-              <Navbar collapseOnSelect expand="lg" className='p-3 header-bg'>
+              <Navbar collapseOnSelect expand="lg" className='p-3 bg-white'>
                   <Container>
                       <Navbar.Brand href="#home"><h1>EDUM-EDUCATION</h1></Navbar.Brand>
                        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                        <Navbar.Collapse id="responsive-navbar-nav">
                        <Nav className="me-auto">
                        </Nav>
-                        <Nav className='fs-4 '>
+                        <Nav className='fs-4'>
                             <NavLink style={navLinkStyle} to='/'>Home</NavLink>
                             <NavLink style={navLinkStyle} to ='/tropics'>Tropics</NavLink>
                             <NavLink style={navLinkStyle} to ='/statistcs'>Statistcs</NavLink>
