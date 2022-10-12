@@ -4,26 +4,98 @@
     height: 90vh;
     background-color:#FFE3DF;
 }
-
-.quiz-section{
+.benar-img{
     width: 100%;
     height: 90vh;
-    background-color:#111D5E; 
-}
-
-@media only screen and (min-width:250px) and (max-width:576px){
-    .quiz-section{
-        background-color:#111D5E; 
-        height: 2200px;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .benar{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 800px;
+    height: 100vh;
 }
 .benar-details{
 
+}
+.benar-details h1{
+    font-size: 50px;
+    font-weight: 650;
+}
+.benar-details p{
+    font-size: 20px;
+}
+.benar-details button{
+    border: none;
+    margin-top: 20px;
+}
+.benar-details button a{
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #FF725E;
+}
+.benar-details button a:hover{
+    background-color: #f7523c;
+}
+
+.quiz-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#111D5E; 
+}
+
+.title{
+    text-decoration: none;
+}
+.title h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+
+@media only screen and (min-width:250px) and (max-width:767px){
+    .benar-section{
+        height: 80vh;
+    }
+   
+    .benar-img{
+        height: 50vh;
+    }
+    .benar-img img{
+        width: 80%;
+    }
+    .benar-details{
+        /* width: 80%; */
+        display: none;
+    }
+    .bg-color{
+        background-color: #111D5E;
+    }
+
+    .quiz-section{
+        background-color: #111D5E;
+        height:330vh;
+       margin-bottom: 0;
+    }
+}
+
+
+@media only screen and (min-width:768px) and (max-width:991px){
+    /* .benar-img {
+        display: none;
+      }   */
+      .quiz-section{ 
+        background-color: #111D5E;
+        height:130vh;
+    }
 }
