@@ -18,6 +18,7 @@ function App() {
       children:[
         {
           path:'/',
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element :<Body></Body>
           
         },
@@ -33,6 +34,10 @@ function App() {
         },
         {
           path:'home/qus/:qusid',
+          element: <Qus />
+        },
+        {
+          path:'qus/:qusid',
           element: <Qus />
         },
         {
