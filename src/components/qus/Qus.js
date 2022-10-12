@@ -37,7 +37,8 @@ const Qus = () => {
                         {item.options.map((it,index)=>{
                              const correctAnswer = () =>{
                                 if(it===item.correctAnswer){
-                                    toast.success('Successfully !')
+                                    toast.success('right answer');
+                                    
             
                                 }else{
                                     toast.error("wrong answer.")

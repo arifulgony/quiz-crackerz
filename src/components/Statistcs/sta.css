@@ -1,5 +1,7 @@
 .chart{
-  margin: 100px auto;
+  width: 100%;
+  height: 100vh;
+  background-color:#FFE3DF;
 }
 
 @media only screen and (min-width:250px) and (max-width:767px){
