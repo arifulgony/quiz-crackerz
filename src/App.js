@@ -5,6 +5,7 @@ import Main from "./components/Layout/Main";
 import Statistcs from "./components/Statistcs/Statistcs";
 import ErroPage from "./components/ErroPage/ErroPage";
 import Qus from "./components/qus/Qus";
+import Body from "./components/Body/Body";
 
 
 
@@ -17,6 +18,11 @@ function App() {
       children:[
         {
           path:'/',
+          element :<Body></Body>
+          
+        },
+        {
+          path:'home',
           loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element:<Home></Home>
         },
@@ -26,7 +32,7 @@ function App() {
           element:<Statistcs></Statistcs>
         },
         {
-          path:'qus/:qusid',
+          path:'home/qus/:qusid',
           element: <Qus />
         },
         {

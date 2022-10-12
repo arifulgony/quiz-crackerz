@@ -8,7 +8,7 @@ import'./Header.css'
 const Header = () => {
     
     const navLinkStyle = ({ isActive }) =>{
- 
+        
         return{
             fontWeight: isActive ? 'bold' : 'normal',
             textDecoration : isActive  ? 'none' :'underline'
@@ -20,13 +20,14 @@ const Header = () => {
             <>
               <Navbar collapseOnSelect expand="lg" className='p-3 bg-white'>
                   <Container>
-                      <Navbar.Brand href="#home"><h1>EDUM-EDUCATION</h1></Navbar.Brand>
+                      <Navbar.Brand><h1>EDUM-EDUCATION</h1></Navbar.Brand>
                        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                        <Navbar.Collapse id="responsive-navbar-nav">
                        <Nav className="me-auto">
                        </Nav>
                         <Nav className='fs-4'>
-                            <NavLink style={navLinkStyle} to='/'>Home</NavLink>
+                            <NavLink style={navLinkStyle}  to='/'></NavLink>
+                            <NavLink style={navLinkStyle}  to='/home'>Home</NavLink>
                             <NavLink style={navLinkStyle} to ='/statistcs'>Statistcs</NavLink>
                             <NavLink style={navLinkStyle} to ='/blog'>Blog</NavLink>
                         </Nav>

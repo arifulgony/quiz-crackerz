@@ -33,6 +33,14 @@
     border: 1px solid  burlywood;
 }
 
+.green{
+    color: green;
+}
+
+.red{
+    color: red;
+}
+
 @media only screen and (min-width:250px) and (max-width:767px){
 
     .qus-body{

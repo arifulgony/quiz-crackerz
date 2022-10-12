@@ -19,12 +19,12 @@ const Qus = () => {
        <section className='qus-body'>
          <div className='container text-center'>
             <h1 className='text-light'>Quiz of {Data && Data.data.name}</h1>
-            {Data && Data.data.questions.map((item)=>{
+            {Data && Data.data.questions.map((item,index)=>{
                 const click = ()=>{ toast(` ANSWER : ${item.correctAnswer}`)}
                 return(
                     <div className='question-container' key={item.id}>
                         <div className='question-view'>
-                        <h4 className='p-5'>Quiz:{item.question}</h4>
+                        <h4 className='p-5'>Quiz {index+1}:{item.question}</h4>
                         <button className='qus-btn' onClick={click}> 
                         <Toaster
                             position="top-right"
@@ -38,7 +38,6 @@ const Qus = () => {
                              const correctAnswer = () =>{
                                 if(it===item.correctAnswer){
                                     toast.success('right answer');
-                                    
             
                                 }else{
                                     toast.error("wrong answer.")
