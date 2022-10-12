@@ -27,7 +27,6 @@ const Header = () => {
                        </Nav>
                         <Nav className='fs-4'>
                             <NavLink style={navLinkStyle} to='/'>Home</NavLink>
-                            <NavLink style={navLinkStyle} to ='/tropics'>Tropics</NavLink>
                             <NavLink style={navLinkStyle} to ='/statistcs'>Statistcs</NavLink>
                             <NavLink style={navLinkStyle} to ='/blog'>Blog</NavLink>
                         </Nav>

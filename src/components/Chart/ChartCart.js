@@ -1,35 +1,23 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import { BarChart, Bar,  XAxis,  Tooltip,} from 'recharts';
-const ChartCart = () => {
-    const [chart, setChart] = useState([]);
-    useEffect(() =>{
-      axios.get('https://openapi.programming-hero.com/api/quiz')
-      .then(data =>{
-        const charts= data.data;
-        const chartsh =charts.map(char => {
-            //  const parts = char.slug.split('-');
-            //  const total =parseInt(parts[1]);
-            const singleChart ={
-                name: char.name,
-               // total: total
-            }
-            return singleChart
-        })
-        setChart(chartsh)
-      } )
+import React from 'react';
+import {LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from "recharts";
+import { useLoaderData } from 'react-router-dom';
+import './chart.css'
 
-    },[])
+
+const Chat = () => {
+    const quiz = useLoaderData();
     return (
-        <BarChart width={500} height={200} data={chart}>
-          <Bar dataKey="total" fill="#8884d8" />
-          
+        <div className='quiz-container'>
+        <LineChart width={400} height={400} data={quiz.data}>
+          <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
+          <YAxis />
           <Tooltip />
-        </BarChart>
-        
+          <Legend />
+          <Line type="monotone" dataKey="total" stroke="#8884d8" activeDot={{ r: 8 }} />
+        </LineChart>
+        </div>
     );
 };
 
-
-export default ChartCart;
+export default Chat;

@@ -4,7 +4,7 @@ import'./Blog.css'
 const Blog = () => {
     return (
        <section className='blog-section'>
-         <div className='container' >
+         <div className='container ' >
                 <div className='blog'>
                     <h3>What is the props of react router ?</h3>
                     <p>React router provides an easy solution for this case.Instead of passing function through component props, we can pass it through render props. While passing our own props, we also need to pass the default props send to the render props by react router. Lets see it in our example.</p>

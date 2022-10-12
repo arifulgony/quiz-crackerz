@@ -3,7 +3,6 @@ import Blog from "./components/Blog/Blog";
 import Home from "./components/Home/Home";
 import Main from "./components/Layout/Main";
 import Statistcs from "./components/Statistcs/Statistcs";
-import Tropics from "./components/Tropics/Tropics";
 import ErroPage from "./components/ErroPage/ErroPage";
 import Qus from "./components/qus/Qus";
 
@@ -20,10 +19,6 @@ function App() {
           path:'/',
           loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element:<Home></Home>
-        },
-        {
-          path:'tropics',
-          element:<Tropics></Tropics>
         },
         {
           path:'statistcs',

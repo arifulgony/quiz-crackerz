@@ -1,7 +1,6 @@
 .qus-body{
     background-color: #111D5E;
     padding: 50px;
-    /* //color: #FFF; */
 }
 .question-container{
     background-color: #ffffff;
@@ -9,10 +8,9 @@
     border: 1px solid burlywood;
     display: flex;
     flex-wrap: wrap;
-    width: 800px;
+    width: 65%;
     padding: 30px;
     border-radius: 10px;
-
 }
 .qus-btn{
  border: none;
@@ -33,4 +31,22 @@
     margin: 8px;
     border-radius: 10px;
     border: 1px solid  burlywood;
+}
+
+@media only screen and (min-width:250px) and (max-width:767px){
+
+    .qus-body{
+        padding: 0;
+    }
+    .question-container{
+        width: 350px;
+    }
+    .question-item{
+        width: 250px;
+        height: 100px;
+    }
+    .question-view h4{
+        font-size: 20px;
+        font-weight: 500;
+    }
 }
